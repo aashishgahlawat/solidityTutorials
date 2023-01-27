@@ -11,6 +11,111 @@ but rather focus on covering as many topics as possible.
 **Ethereum** is one of the many other blockchains out there e.g. Solana, Flow, Near etc.
 There tutorials are specific to Ethereum Blockchain.
 
+## Introduction
+
+[Read Basics here](./basics/theory/BASICS.md)
+
+| Content                       | Description                                                                     |
+|-------------------------------|---------------------------------------------------------------------------------|
+| Web Era                       | Web 1.0, 2.0, 3.0                                                               |
+| Blockchain                    | Distributed Decentralized Ledger                                                |
+| Gas Fee                       | Base + Priority (Tip)                                                           |
+| Mining                        | Creating a new block                                                            |
+| Block                         | Transactions and many more                                                      |
+| Chain                         | Orderly arrangement of blocks                                                   |
+| Storage                       | Permanent & Ephemeral                                                           |
+| Double Spending Problem       | How blockchain handles it.                                                      |
+| 51% Attack                    | Towards Centralization                                                          |
+| Consensus                     | To agree upon the system and block state                                        |
+| Byzantine's General Problem   |                                                                                 |
+| HashCash                      | Email Spamming                                                                  |
+| POW                           | Proof of Work                                                                   |
+| POS                           | Proof of Stake                                                                  |
+| Account & Wallet              | How accounts are created and how wallets manage them                            |
+| Smart Contract                | The agreement to behave as expected                                             |
+| FT & NFT                      | Fungible & Non Fungible                                                         |
+| ERC 20, 721, 721A, 1155       | IERC Standards implementations                                                  |
+| Openzeppelin                  | Smart Contracts Framework                                                       |
+| Infura                        | RPC to interact with Ethereum network, unless you decide to setup your own node |
+| DAO                           | Decentralized Organisation                                                      |
+| DAPP                          | Decentralized Application                                                       |
+| DEFI                          | Decentralized Financial Institution                                             |
+| DEGI                          | Decentralized Gaming                                                            |
+| Remix                         | Ihe solidity IDE                                                                |
+| Brownie (Truffle)             | Python Testing Framework (help you setup (local) / link accounts)               |
+| Hardhat                       | NodeJS Ethereum Development Environment                                         |
+| IPFS                          | Inter Planetary File System                                                     |
+| Pinata                        | NFT Media Management / Storage                                                  |
+| web3.storage                  | NFT Media Management / Storage                                                  |
+| Side Chain (Layer 2 Solution) | Polygon (Matic) & many more                                                     |
+| EVM                           | Ethereum Virtual Machine                                                        |
+| Testnet (Faucets)             | To test before you go live as you can't rollback                                |
+| Security                      | Re-Entrance, Ethernaut and many more                                            |
+| Audit                         | Finding Security Breach                                                         |
+| OpenSea                       | Digital Marketplace                                                             |
+| Ethernaut                     | The Solidity Hacks                                                              |
+| FAQ                           | Why? What? How?                                                                 |
+| Userful Links                 | To explore more                                                                 |
+| Youtube Channels              | For in-depth knowledge                                                          |
+
+## Solidity Basics
+
+| Content                      | Description                                       |
+|------------------------------|---------------------------------------------------|
+| ERC20                        | IERC20 Implementation                             |
+| ERC721                       | IERC721 Implementation                            |
+| ERC721A                      | Improved version of 721 (not aggressively tested) |
+| ERC1155                      | IERC1155 Implementation                           |
+| Airdrop                      | Mint on behalf                                    |
+| Event                        | Let the outside world know the changes            |
+| Event Topic                  | Web 1.0, 2.0, 3.0                                 |
+| Commission                   | Commission per transaction (multiple splits)      |
+| Royalty                      |                                                   |
+| Merkle Tree                  | The cryptography used for whitelisting            |
+| Modifier                     | Modify before / after leaving                     |
+| Mapping                      | Key - value                                       |
+| Data Types                   | Struct, Array and many more                       |
+| Subscribing to events        | Polling and websocket                             |
+| Re-Entrance Guard            | Extra precaution                                  |
+| Smart Contract Communication | Calling another Smart Contract function           |
+| Total - Max Supply           | What is total & max supply of Bitcoin & Ethereum? |
+| Transferring Ownership       | Transferring ownership of NFT                     |
+| Approve & Approve All        |                                                   |
+| Multiple Inheritance         | How multiple inheritance is resolved              |
+| Virtual                      |                                                   |
+| Pure and View                | Why read is gas free?                             |
+| Storage - Callable - Memory  | Variables Storage                                 |
+| Private                      | Is is really private?                             |
+| keccak256                    | Is is really private?                             |
+| constructor                  | Is constructor code a part on bytecode?           |
+| Burnable                     | Burning a Token                                   |
+| Withdraw                     | Ensure the funds can be withdrawn                 |
+| Testing                      | PyTest: Auto deploy / mint token                  |
+| Signing                      | Signing a transactions                            |
+| Merkle Tree                  | How it helps with pre-whitelisting (Coupons)      |
+| Whitelisting                 | Merkle root - proof                               |
+| On Chain Verification        | Instant Whitelisting                              |
+| Flatter                      | Flatten all files into one                        |
+| Visualize                    | Visualizing smart contract functions flow         |
+| Contract Verification        | Smart Contract Code Verification                  |
+| Library                      |                                                   |
+| Destroy                      | Destroy a Smart Contract                          |
+| Verifications                | Verify an action has been performed by user       |
+| OpenSea                      | How OpenSea know about your token instantly?      |
+
+## Solidity Intermediate
+
+| Content                      | Description                                         |
+|------------------------------|-----------------------------------------------------|
+| OpenSeat Token Metadata      | Adding more information to your NFT                 |
+| Custodial Wallet             | Chat are custodial wallets and how are they created |
+| On Contract Media Storage    | Storing small files in Smart Contract (Bytes)       |
+| Staking                      | Funds Staking                                       |
+| Token Exchange / Split       | Exchange / Split token for other                    |
+| Upgradable Smart Contract    | How immutable is made mutable                       |
+| MultiSig Wallet              |                                                     |
+| Application Binary Interface | ABI & Creating your own GUI using ABI               |
+
 ### Web 1.0:
 
 In the 1990's with `Netscape` (web browser) bought the era of static web pages
