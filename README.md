@@ -90,6 +90,7 @@ There tutorials are specific to Ethereum Blockchain.
 | constructor                  | Is constructor code a part on bytecode?           |
 | Burnable                     | Burning a Token                                   |
 | Withdraw                     | Ensure the funds can be withdrawn                 |
+| Transaction Properties       | E.g. `msg.sender`                                 |
 | Testing                      | PyTest: Auto deploy / mint token                  |
 | Signing                      | Signing a transactions                            |
 | Merkle Tree                  | How it helps with pre-whitelisting (Coupons)      |
@@ -509,6 +510,13 @@ Miner
 An IDE to help develop, test, debug, deploy, flatter, visualize a smart contract (and many more)
 Available online, As docker image, as VsCode Extension
 
+[Remix IDE Docs](https://remix-ide.readthedocs.io/en/latest/)
+
+Global Variables
+`msg.sender` Sender of request
+
+More Transaction Properties [here](https://docs.soliditylang.org/en/v0.8.17/units-and-global-variables.html)
+
 ### Ganache (Truffle)
 
 1. Testing and development environment for python [web3.pu](https://web3py.readthedocs.io/en/v5/)
@@ -517,7 +525,11 @@ Available online, As docker image, as VsCode Extension
 
 ### Hardhat
 
-1. Development Environment of JavaScript [web3.js](https://web3js.readthedocs.io/en/v1.8.1/)
+1. Development Environment of JavaScript
+
+[Web3.js](https://web3js.readthedocs.io/en/v1.8.1/)
+
+[Ether.js](https://docs.ethers.org/v5/getting-started/)
 
 ### Polygon [Side Chain]
 
@@ -527,7 +539,7 @@ Side Chain for Ethereum for Level 2 Scaling
 
 The Programming (Compiled) language to write smart contracts
 
-[Docs](https://docs.soliditylang.org/en/v0.8.17/)
+[Solidity Docs](https://docs.soliditylang.org/en/v0.8.17/)
 
 [Assembly: YUL](https://docs.soliditylang.org/en/v0.8.17/yul.html)
 
@@ -576,3 +588,19 @@ Why do you get so less faucet? As it mimics the mainnet and does equal computati
 
 [Smart Contract Programmer](https://www.youtube.com/@smartcontractprogrammer)
 [Eat The Blocks](https://www.youtube.com/@EatTheBlocks)
+
+> This repository doesn't server the purpose of in-depth knowledge
+
+Documentations are the best way to learn. Read documentations in order:
+
+```mermaid
+  graph LR;
+      ETHEREUM-->SOLIDITY;
+      SOLIDITY-->OPENZEPPELIN;
+      OPENZEPPELIN-->REMIX-IDE;
+      REMIX-IDE-->CODE
+```
+
+# Lets code
+
+View individual `.md` and `.sol` files in subdirectories for each individual concept explanation and implementation
