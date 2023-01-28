@@ -116,6 +116,8 @@ There tutorials are specific to Ethereum Blockchain.
 | Upgradable Smart Contract    | How immutable is made mutable                       |
 | MultiSig Wallet              |                                                     |
 | Application Binary Interface | ABI & Creating your own GUI using ABI               |
+| Decimals handling            | How to handle decimal values                        |
+| Date time                    | Working with datetime                               |
 
 ### Web 1.0:
 
@@ -617,8 +619,15 @@ Why do you get so less faucet? As it mimics the mainnet and does equal computati
 
 ### Youtube Channels
 
+**English:**
+
 [Smart Contract Programmer](https://www.youtube.com/@smartcontractprogrammer)
+
 [Eat The Blocks](https://www.youtube.com/@EatTheBlocks)
+
+**Hindi:**
+
+[Code Eater](https://www.youtube.com/@CodeEater21)
 
 > This repository doesn't server the purpose of in-depth knowledge
 
@@ -642,9 +651,9 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract BitCoinToken is ERC20 {
-    constructor(uint256 initialSupply) ERC20("BitCoin", "BTC") {
-        _mint(msg.sender, initialSupply);
-    }
+   constructor(uint256 initialSupply) ERC20("BitCoin", "BTC") {
+      _mint(msg.sender, initialSupply);
+   }
 }
 ```
 
