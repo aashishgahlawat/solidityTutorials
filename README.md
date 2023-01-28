@@ -201,6 +201,8 @@ in that scenario `P1` and `P2` will lose access to their data.
 Fee paid per transaction to `B` bank to manage the system state (transaction ledger).
 (**Note:** Base and Priority fee are later explained)
 
+[Ethereum Gas fee for each op-code](https://ethereum.org/en/developers/docs/evm/opcodes/)
+
 ### Mining / Creating
 
 As in practical world the number of users that the bank has to manage is high and transactions number can be in *
@@ -335,9 +337,17 @@ which then other nodes can easily verify by hashing.
 3. Verifying the `nonce` is easy and fast
 4. All Miners as using their resources to find number and practically wasting resources
 
-### Proof of State [Current]
+### Proof of Stake [Current]
+
+Proof of Stake (POS) uses randomly selected validators to confirm transactions and create new blocks. Proof of Work (
+POW) uses a competitive validation method to confirm transactions and add new blocks to the blockchain.
+
+[Ethereum POS Docs](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/)
+[51% attack cost in various chains](https://www.crypto51.app/)
 
 **How this will minimize 51% attack?**
+Owning 51% Stake means to put more than $409.88 M on stake which is a significant amount for an individual and hence
+further reduces the risk of 51% stake as in POW Owning 51% Hardware (Machines) is much cost-effective as compared to POS
 
 #### What is double spending?
 
@@ -402,6 +412,8 @@ as Rupee in indian currency and paisa is its smallest unit
 4. The account is not added to ethereum unless a transaction is made (credit/debit) to the account.
 5. Accounts are stored in Ephemeral storage tire of ethereum (value can be changed)
 
+[Metamask Docs](https://docs.metamask.io/guide/#why-metamask)
+
 ### Nodes Type
 
 All nodes mandatory participate in verification (e.g. block creation, verifying nonce found by miner)
@@ -426,7 +438,7 @@ All nodes mandatory participate in verification (e.g. block creation, verifying 
 is
 much easier than on coinbase or other wallets. Coinbase is more focused to mainnet for real transactions
 
-### How ERC1155 works
+### How ERC1155 works?
 
 ### DAO
 
@@ -471,6 +483,8 @@ Deploying code on bitcoin is almost impossible.
 
 ### EVM
 
+[Ethereum EVM docs](https://ethereum.org/en/developers/docs/evm/)
+
 ### Coding a Smart Contract
 
 Since the processing incurs gas, the system pre-know what needs to be executed to calculate the gas and the system is
@@ -481,9 +495,23 @@ For EVM, **Solidity** is used.
 
 ### Files Storage [IPFS: Pinata / web3.storage]
 
+[IPFS Docs](https://docs.ipfs.tech/)
+
+[Pinata Docs](https://docs.pinata.cloud/)
+
+[Web3.storage Docs](https://web3.storage/docs/)
+
+**Note:** Many projects even stores files on centralized web2 platform.
+Changing base url help reveal NFT Artwork later and multiple use cases.
+
 ### OpenSea
 
 Claiming Ownership of NFT
+
+OpenSea Testnet
+
+SeaPort Protocol
+
 Changing Contract Creator wallet name
 
 ### Interacting with web3 from web2
@@ -500,9 +528,12 @@ certain limit only as smart contracts have a certain size limit.
 
 ### Why don't retrieving data cost gas?
 
+It doesn't make any state change to variables, i.e. is read only operation and does not require a transaction
+(change state) (Transaction need to be run on each node). Ethereum handles read and create/update transactions seprately
+
 ### Who executes code?
 
-Miner
+Miner Nodes
 
 ### REMIX
 
@@ -598,9 +629,25 @@ Documentations are the best way to learn. Read documentations in order:
       ETHEREUM-->SOLIDITY;
       SOLIDITY-->OPENZEPPELIN;
       OPENZEPPELIN-->REMIX-IDE;
-      REMIX-IDE-->CODE
+      REMIX-IDE-->METAMASK;
+      METAMASK-->CODE;
 ```
 
-# Lets code
+**Your own BitCoin (ERC20) implementation:**
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract BitCoinToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("BitCoin", "BTC") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+```
+
+# Lets Code
 
 View individual `.md` and `.sol` files in subdirectories for each individual concept explanation and implementation
