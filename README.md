@@ -1,17 +1,34 @@
 ### Target Audience
 
-Those who are new to the web3 world or have some experience in Ethereum(Solidity) development
+Those who are new to the web3 world or have some experience in Ethereum (Solidity) development
+
+### What to expect
+
+1. What is web3 and why is everyone talking about it
+2. What is Blockchain (Bitcoin / Ethereum and many more)
+3. How can it help your business grow and what are possible use cases for your business.
+4. What is Ethereum
+5. How to build secure applications on Ethereum
+
+**Note:** It mainly focuses on the coding part and should be seen as quick start and roadmap.
+
+### What not to expect
+
+This is a really fast way to get started with coding on **Ethereum** Blockchain and does not include an in-dept concept
+visit but rather focus on quantity over quality by covering as many topics as possible. Hope you are not expecting an
+in-depth
+knowledge of each individual topic (_links will be provided for further reading_)
 
 ### Motive
 
-This is a really fast way to get started with coding in **Ethereum** Blockchain and does not include an in-dept concept
-visit
-but rather focus on covering as many topics as possible.
-
 **Ethereum** is one of the many other blockchains out there e.g. Solana, Flow, Near etc.
-There tutorials are specific to Ethereum Blockchain.
+There tutorials are specific to Ethereum Blockchain (_mainly coding in solidity more than theory_). Don't worry if you
+don't know what all
+these words mean, by the end of tutorial you will have basic knowledge of all these and should be able to make basic
+applications
+on Ethereum Blockchain
 
-## Introduction
+## Table Of Content: Introduction
 
 [Read Basics here](./basics/theory/BASICS.md)
 
@@ -27,7 +44,7 @@ There tutorials are specific to Ethereum Blockchain.
 | Double Spending Problem       | How blockchain handles it.                                                      |
 | 51% Attack                    | Towards Centralization                                                          |
 | Consensus                     | To agree upon the system and block state                                        |
-| Byzantine's General Problem   |                                                                                 |
+| Byzantine's General Problem   | Building Trust                                                                  |
 | HashCash                      | Email Spamming                                                                  |
 | POW                           | Proof of Work                                                                   |
 | POS                           | Proof of Stake                                                                  |
@@ -58,7 +75,7 @@ There tutorials are specific to Ethereum Blockchain.
 | Userful Links                 | To explore more                                                                 |
 | Youtube Channels              | For in-depth knowledge                                                          |
 
-## Solidity Basics
+## Table Of Content: Solidity Basics
 
 | Content                      | Description                                       |
 |------------------------------|---------------------------------------------------|
@@ -104,7 +121,7 @@ There tutorials are specific to Ethereum Blockchain.
 | Verifications                | Verify an action has been performed by user       |
 | OpenSea                      | How OpenSea know about your token instantly?      |
 
-## Solidity Intermediate
+## Table Of Content: Solidity Intermediate
 
 | Content                      | Description                                         |
 |------------------------------|-----------------------------------------------------|
@@ -145,13 +162,66 @@ be available.
 
 ### Blockchain
 
-Decentralized Distributed Ledger (Public or Private)
+**Definition:** Decentralized Distributed Immutable Ledger (Public or Private)
+
+So to solve the centralization problem, blockchain evolved.
+Building a decentralized system is not a new concept but there were various challenges to it that were recently solved
+(by satoshi nakamoto) which let to Bitcoin come up as the first blockchain followed by many (_including Ethereum_). Some
+challenges were:
+
+1. Double spending of cryptocurrency: Copying the digital currency and using it multiple times for purchase
+2. Bringing consensus between all nodes of decentralized network to agree on a single state of system
+
+**Note:** Cryptocurrency is just on of the application of Blockchain, which made blockchain popular (Bitcoin)
+
+The Bitcoin was made to work as a digital currency (replacement of fiat money) but the problem with Bitcoin Blockchain
+is that it is almost impossible for developers to build & deploy their own
+web3 applications (e.g. decentralized loan application etc.) on it.
+
+`Bitcoin` (`BTC` symbol) is the cryptocurrency of Bitcoin Blockchain.
+
+To solve this problem another **public** blockchain named `Ethereum` evolved which was
+developers friendly where organisations could build and deploy decentralized applications in forms of `Smart Contracts`
+(later explained).
+
+`Ether` (`ETH` symbol) is the currency of Ethereum Blockchain used to pay for deployment / processing
+of transactions on Ethereum and anything that changes the state of Blockchain (in form of **gas fee** (_processing
+fee_): later explained).
+
+### Applications of Blockchain
+
+1. Building NFT collection (Non-Fungible Token: later explained)
+2. Decentralized Finance (DeFi)
+3. Decentralized Voting
+4. Decentralized Real Estate application (Help avail entire sale-purchase history of property)
+5. Decentralized Social Media application
+6. Cryptocurrency
+7. Logistic (Keeping track of goods)
+
+### Drawbacks of Blockchain
+
+1. Money Laundering (being solved with new blockchains that requires KYC)
+2. Energy Waste (significantly reduced by Ethereum merge: later explained) and many more.
+
+### Popular applications build on Ethereum
+
+1. UniSwap  (Swap & Trade ERC20 Token: later explained)
+2. OpenSea (Decentralized NFT Trading)
+3. 1inch Network  (Decentralized Exchange)
+4. Angry Ape NFT (NFT: later explained)
+5. Aave (Decentralized Finance: DeFi)
+6. Steemit (Decentralized Social Media)
+7. Audius (Decentralized music streaming) and many more
+
+Check out more cool apps on various chains [here](https://dappradar.com/rankings)
+
+For more details read [Ethereum White Paper](https://ethereum.org/en/whitepaper/)
 
 #### Chain of Blocks of transactions (Blocks order matters)
 
 ```mermaid
   graph LR;
-      NODE-A-->BLOCK-B;
+      BLOCK-A-->BLOCK-B;
       BLOCK-B-->BLOCK-C;
       BLOCK-C-->BLOCK-D;
       BLOCK-D-->BLOCK-E;
@@ -168,26 +238,32 @@ Decentralized Distributed Ledger (Public or Private)
 ### Understanding basics with a short story
 
 **Assumption:**
-Let `P1` & `P2` be to person with a **joint** account in `B` Bank with initial balance of $100 and
+Let `P1` & `P2` be to brothers with a **joint** account in `B` Bank with initial balance of $100 and
 both `P1` & `P2` do some transactions (_can be in parallel_) and say `P1` withdrew **$70** followed by `P2` trying to
 withdraw
 another **$70**.
 
 It is the `B` Banks who manages and maintain the system state (transaction orders: _Credit / Debit_)
-and for the services that the `B` bank provide the bank collects `x` percent amount per transaction
+and for the accounts maintenance services the bank collects `x` percent amount per transaction
 done by `P1` & `P2` in order to continue its day to day operations.
 
-Once a transactions has been processed and logged by the bank, their order can no longer be altered.
+Once a transactions have been processed and logged into the bank system, their order can no longer be altered.
 
 Let's say you have 10 pages of your passbook printed with list of transactions made, and you decide to replace last page
 with the first, the bank will
 verify the same with the transactions ledger in their system and if invalid, will nullify it.
 
-In the above scenario, the whole system trust relies on `B` bank to do its duty as per the guidelines and protocols
-which makes the whole system centralized to `B` bank. If the bank for some reason decides to seize `P1` and `P2`'s
-account,
-in that scenario `P1` and `P2` will lose access to their data.
+In the above scenario, the whole system trust relies on `B` bank to not act evil and work as per protocols.
+which makes the whole system centralized to `B` bank. If the bank for some reason decides to seize account or act evil,
+that is possible
 
+**Learnings:**
+
+1. In Web2, we expect financial institutions to not act evil but in Web3, the financial institutions can not act evil (
+   if Protocols states so).
+2. We have seen Web2 applications acting evil and setting users data for personal gains, leading to loss of trust.
+
+**Let's understand some terms used above:**
 > **Transaction Ledger:** Book or collection of accounts in which account transactions are recorded
 
 > **Distributed:** Disbursement of assets / data
@@ -198,26 +274,71 @@ in that scenario `P1` and `P2` will lose access to their data.
 > loosing their hard-earned followers data as the database was centralized and owned by `Tik-Tok` whose access was
 > restricted.
 
+So a blockchain is a network of Nodes (2 or more: at-least one full node (later explained))
+
+1. **Distributed:** Data in distributed among multiple nodes around the world
+2. **Decentralized:** No single node has authority over the system (_all nodes are equal: full & partial nodes explained
+   later_)
+3. **Immutable:** Transaction once logged (added to a block) can not be altered.
+
+**Private Blockchain:**
+
+Withing the organisation, anyone can connect as a node (given it fulfils the hardware resource and installs the
+Blockchain Virtual machine that controls the system)
+
+**Public Blockchain:**
+
+Anyone can volunteer to operate as a node (given it fulfils the hardware resource and installs the Blockchain Virtual
+machine that controls the system)
+Example of public blockchain: Ethereum, BitCoin, LiteCoin
+
+**Note:** More the nodes, more secure the network is.
+
+In Blockchain, Software governs hardware, In case of Ethereum the node needs to install EVM (Ethereum Virtual Machine)
+that defines the set of rules according to which the hardware will process.
+
+E.g. (in context to Ethereum)
+
+1. Nodes can not refuse to upgrade to new protocols by blockchain
+2. Nodes can not refuse to verify newly minted block validity (later explained)
+
+[Volunteer as node on Ethereum](https://ethereum.org/en/run-a-node/)
+
+[EtherScan Nodes Tracker](https://etherscan.io/nodetracker)
+
+Full, Light, Archive Nodes types and benefits of running a node
+on [Ethereum (docs)](https://ethereum.org/en/developers/docs/nodes-and-clients/)
+
 ### Gas Fee [Base + Priority]
 
 Fee paid per transaction to `B` bank to manage the system state (transaction ledger).
-(**Note:** Base and Priority fee are later explained)
+
+**Note:** It includes Base and Priority Fee (Tip) which are later explained
 
 [Ethereum Gas fee for each op-code](https://ethereum.org/en/developers/docs/evm/opcodes/)
 
+**Note:** Storage is the most expensive in terms of Gas Fee, so we always need to declare minimum number of variables
+and need to significantly optimize code while building our decentralized applications.
+A single avoidable variable declaration with millions of transactions involving it can cost a lot of gas.
+Optimization is the main focus while building applications on Ethereum and is a tradeoff with prettier code.
+Note: This doesn't mean writing code that can't scale, comments should be used to explain the code wherever required.
+
 ### Mining / Creating
 
-As in practical world the number of users that the bank has to manage is high and transactions number can be in *
-*millions**,
-and as each individual hardware system has its own limits to put all transactions in a single system won't be feasible
+As in practical world the number of users that the bank has to manage is high and transactions number can be in
+**millions**,
+and as each individual hardware system has its own limits, so to put all transactions in a single system won't be
+feasible
 (vertical scaling has its limits), so to keep the system scale to more transaction
-the bank `mines` (creates) a new hardware system to hold the new transactions (_OLAP / OLTP_)
+the bank `mines` (creates) a new hardware system to hold the new transactions
+
+(**OLAP:** Archive Nodes / **OLTP:** Full / Light Node (indirectly))
 
 > Mining is a process of creating and adding a block of transactions to the blockchain network of Ethereum.
 
-### Can anyone become miner?
+### Can anyone become miner in public Blockchain?
 
-To become a miner you will need hardware & Networking system connected to Ethereum Mainnet with Ethereum Virtual
+To become a miner you will need hardware & network capable system connected to Ethereum Mainnet with Ethereum Virtual
 machine (EVM)
 installed into it and then to load all the transaction ledger so far in the system.
 The EVM ensures that the system complies with the Ethereum protocols (_e.g. consensus algorithm: Later explained._)
@@ -613,6 +734,8 @@ Why do you get so less faucet? As it mimics the mainnet and does equal computati
 
 [Debugging in Remix](https://www.youtube.com/watch?v=7z52hP26MFs&list=LL&index=818)
 
+[CoinMarketCap: Ethereum](https://coinmarketcap.com/currencies/ethereum/)
+
 [Youtube: Introduction to Blockchain](https://www.youtube.com/watch?v=V0JdeRzVndI)
 
 [YouTube: Blockchain Working](https://www.youtube.com/watch?v=SSo_EIwHSd4)
@@ -651,11 +774,13 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract BitCoinToken is ERC20 {
-   constructor(uint256 initialSupply) ERC20("BitCoin", "BTC") {
-      _mint(msg.sender, initialSupply);
-   }
+    constructor(uint256 initialSupply) ERC20("BitCoin", "BTC") {
+        _mint(msg.sender, initialSupply);
+    }
 }
 ```
+
+In the code above we made a token, see: [Token vs Coin](https://www.youtube.com/watch?v=aLh8jlYYvZA&list=LL&index=13)
 
 # Lets Code
 
