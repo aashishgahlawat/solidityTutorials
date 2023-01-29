@@ -1,32 +1,32 @@
 ### Target Audience
 
-Those who are new to the web3 world or have some experience in Ethereum (Solidity) development
+Those who are new to the web3 world or have some experience in Ethereum (Solidity) development, or you just heard about
+Blockchain and now
+wants to learn how to build applications on Web3 but doesn't know where to start or even what web3 is.
 
 ### What to expect
 
-1. What is web3 and why is everyone talking about it
+1. What is web3 and why is everyone talking about it.
 2. What is Blockchain (Bitcoin / Ethereum and many more)
 3. How can it help your business grow and what are possible use cases for your business.
-4. What is Ethereum
-5. How to build secure applications on Ethereum
+4. What is Ethereum and how is it different from Bitcoin.
+5. How to build secure applications on Ethereum.
 
 **Note:** It mainly focuses on the coding part and should be seen as quick start and roadmap.
 
 ### What not to expect
 
-This is a really fast way to get started with coding on **Ethereum** Blockchain and does not include an in-dept concept
-visit but rather focus on quantity over quality by covering as many topics as possible. Hope you are not expecting an
-in-depth
-knowledge of each individual topic (_links will be provided for further reading_)
+This is a fast way to get started with coding on **Ethereum** Blockchain and does not include an in-dept concept
+visit but rather focus on quantity over quality by covering as many topics as possible (_links will be given for further
+reading_).
 
 ### Motive
 
 **Ethereum** is one of the many other blockchains out there e.g. Solana, Flow, Near etc.
 There tutorials are specific to Ethereum Blockchain (_mainly coding in solidity more than theory_). Don't worry if you
 don't know what all
-these words mean, by the end of tutorial you will have basic knowledge of all these and should be able to make basic
-applications
-on Ethereum Blockchain
+these words mean, by the end of tutorial you will have basic knowledge of all these and should be able to create basic
+applications on Ethereum Blockchain
 
 ## Table Of Content: Introduction
 
@@ -71,6 +71,9 @@ on Ethereum Blockchain
 | Audit                         | Finding Security Breach                                                         |
 | OpenSea                       | Digital Marketplace                                                             |
 | Ethernaut                     | The Solidity Hacks                                                              |
+| Uncle Node                    | The Solidity Hacks                                                              |
+| Orphaned Blocks               | The Solidity Hacks                                                              |
+| CoinBase                      | The Solidity Hacks                                                              |
 | FAQ                           | Why? What? How?                                                                 |
 | Userful Links                 | To explore more                                                                 |
 | Youtube Channels              | For in-depth knowledge                                                          |
@@ -138,7 +141,7 @@ on Ethereum Blockchain
 
 ### Web 1.0:
 
-In the 1990's with `Netscape` (web browser) bought the era of static web pages
+In the 1990's with `Netscape` (web browser) came the era of static web pages (accessible via a web browser)
 
 ### Web 2.0:
 
@@ -146,19 +149,19 @@ The introduction of `Mobile Internet` | `Social Network` | User of `HTTPS` to fe
 sources
 bought the era of **web2**
 
-In **web2** to fetch data, permissions are required as data is centralized
+In **web2** to fetch data, permissions are required as data is centralized / stored
 into various organisations database systems like Google, AWS, Alibaba, Netflix etc.
-Also, there can be government restrict to access to data in certain regions / times and can monitor and control data
-flow,
-Big players usually defines rules
+Also, there can be government restrict to access the data in certain regions / times and government can monitor and
+control data
+flow. Big players usually defines rules
 
 ### Web 3.0
 
-Data is distributed and decentralized and even if one organisation decides to shut down its servers, the data will still
-be available.
-(unless the whole network nodes decides to shut down) Nodes can't refuse to upgrade to new regulations.
+Data is distributed and decentralized over different nodes around the world and all nodes have equal rights, so even if
+one organisation decides to shut down its servers, the data will still
+be available (unless all nodes decides to shut down) Nodes can't refuse to upgrade to new regulations.
 
-**Web3** Has its own pros and cons.
+**Note:** **Web3** Has its own pros and cons.
 
 ### Blockchain
 
@@ -166,8 +169,8 @@ be available.
 
 So to solve the centralization problem, blockchain evolved.
 Building a decentralized system is not a new concept but there were various challenges to it that were recently solved
-(by satoshi nakamoto) which let to Bitcoin come up as the first blockchain followed by many (_including Ethereum_). Some
-challenges were:
+(by satoshi nakamoto) which led to Bitcoin come up as the first blockchain followed by many (_including Ethereum_). Some
+challenges that are solved are:
 
 1. Double spending of cryptocurrency: Copying the digital currency and using it multiple times for purchase
 2. Bringing consensus between all nodes of decentralized network to agree on a single state of system
@@ -178,14 +181,14 @@ The Bitcoin was made to work as a digital currency (replacement of fiat money) b
 is that it is almost impossible for developers to build & deploy their own
 web3 applications (e.g. decentralized loan application etc.) on it.
 
-`Bitcoin` (`BTC` symbol) is the cryptocurrency of Bitcoin Blockchain.
+> `Bitcoin` (`BTC` symbol) is the cryptocurrency of Bitcoin Blockchain.
 
-To solve this problem another **public** blockchain named `Ethereum` evolved which was
+To solve this problem another **public** blockchain named `Ethereum` evolved which is
 developers friendly where organisations could build and deploy decentralized applications in forms of `Smart Contracts`
 (later explained).
 
-`Ether` (`ETH` symbol) is the currency of Ethereum Blockchain used to pay for deployment / processing
-of transactions on Ethereum and anything that changes the state of Blockchain (in form of **gas fee** (_processing
+> `Ether` (`ETH` symbol) is the currency of Ethereum Blockchain used to pay for deployment / processing
+> of transactions on Ethereum and anything that changes the state of Blockchain (in form of **gas fee** (_processing
 fee_): later explained).
 
 ### Applications of Blockchain
@@ -197,11 +200,16 @@ fee_): later explained).
 5. Decentralized Social Media application
 6. Cryptocurrency
 7. Logistic (Keeping track of goods)
+8. Bring Transparency & Trust
 
 ### Drawbacks of Blockchain
 
 1. Money Laundering (being solved with new blockchains that requires KYC)
 2. Energy Waste (significantly reduced by Ethereum merge: later explained) and many more.
+3. Privacy (Everything is public: Being solved E.g. ZCash)
+4. Slow (Processing transaction takes time or even might never be processed: later explained)
+
+[Advantages & Disadvantages of Blockchain: GeeksForGeeks](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-blockchain/)
 
 ### Popular applications build on Ethereum
 
@@ -238,41 +246,54 @@ For more details read [Ethereum White Paper](https://ethereum.org/en/whitepaper/
 ### Understanding basics with a short story
 
 **Assumption:**
-Let `P1` & `P2` be to brothers with a **joint** account in `B` Bank with initial balance of $100 and
+Let `P1` & `P2` be to brothers with **joint** account in `B` Bank with initial balance of $100 and
 both `P1` & `P2` do some transactions (_can be in parallel_) and say `P1` withdrew **$70** followed by `P2` trying to
 withdraw
 another **$70**.
+
+**Scenario 1:**
 
 It is the `B` Banks who manages and maintain the system state (transaction orders: _Credit / Debit_)
 and for the accounts maintenance services the bank collects `x` percent amount per transaction
 done by `P1` & `P2` in order to continue its day to day operations.
 
-Once a transactions have been processed and logged into the bank system, their order can no longer be altered.
+Once a transactions have been processed and logged into the bank system, their order can no longer be altered (
+immutable).
+
+**Scenario 2:**
 
 Let's say you have 10 pages of your passbook printed with list of transactions made, and you decide to replace last page
 with the first, the bank will
 verify the same with the transactions ledger in their system and if invalid, will nullify it.
 
+**Conclusion:**
+
 In the above scenario, the whole system trust relies on `B` bank to not act evil and work as per protocols.
 which makes the whole system centralized to `B` bank. If the bank for some reason decides to seize account or act evil,
-that is possible
+that is possible, which would be a huge setback for `P1` & `P2`
 
 **Learnings:**
 
-1. In Web2, we expect financial institutions to not act evil but in Web3, the financial institutions can not act evil (
-   if Protocols states so).
-2. We have seen Web2 applications acting evil and setting users data for personal gains, leading to loss of trust.
+1. In Web2, we **expect** financial institutions **to not** act evil (but there is no surety that they won't act evil)
+   but in Web3,
+   the financial institutions **can not** act evil (they work as per protocols, even if they desire to act evil, they
+   can't).
+2. We have seen Web2 applications acting evil and selling users data for personal gains, leading to loss of trust in
+   those institutions.
 
 **Let's understand some terms used above:**
-> **Transaction Ledger:** Book or collection of accounts in which account transactions are recorded
-
-> **Distributed:** Disbursement of assets / data
-
-> **Decentralized:** Not controlled by single entity
 
 > **Example:** The India government decided to ban popular social media platform `Tik-Tok` leading to thousands of users
 > loosing their hard-earned followers data as the database was centralized and owned by `Tik-Tok` whose access was
 > restricted.
+>
+> **Lesson:** Your data relies on some centralized system which may for some reason shut down.
+>
+> In Blockchain, You own your data, so even post Tik-Tok ban you could have easily migrated your follower data to some
+> other social media platform supporting web3 protocols.
+>
+> This doesn't mean Blockchain can never shut down, the chances are really rare and extremely hard to hack that a web2
+> organisation as it is not controlled by a single entity.
 
 So a blockchain is a network of Nodes (2 or more: at-least one full node (later explained))
 
@@ -280,6 +301,7 @@ So a blockchain is a network of Nodes (2 or more: at-least one full node (later 
 2. **Decentralized:** No single node has authority over the system (_all nodes are equal: full & partial nodes explained
    later_)
 3. **Immutable:** Transaction once logged (added to a block) can not be altered.
+4. **Transaction Ledger:** Book or collection of accounts in which account transactions are recorded
 
 **Private Blockchain:**
 
@@ -292,7 +314,7 @@ Anyone can volunteer to operate as a node (given it fulfils the hardware resourc
 machine that controls the system)
 Example of public blockchain: Ethereum, BitCoin, LiteCoin
 
-**Note:** More the nodes, more secure the network is.
+**Note:** More the nodes, more secure (decentralized) the network is.
 
 In Blockchain, Software governs hardware, In case of Ethereum the node needs to install EVM (Ethereum Virtual Machine)
 that defines the set of rules according to which the hardware will process.
@@ -300,13 +322,15 @@ that defines the set of rules according to which the hardware will process.
 E.g. (in context to Ethereum)
 
 1. Nodes can not refuse to upgrade to new protocols by blockchain
-2. Nodes can not refuse to verify newly minted block validity (later explained)
+2. Nodes can not refuse to verify newly minted block validity (full nodes: later explained)
 
-[Volunteer as node on Ethereum](https://ethereum.org/en/run-a-node/)
+[How to volunteer as node on Ethereum (Ethereum docs)](https://ethereum.org/en/run-a-node/)
 
 [EtherScan Nodes Tracker](https://etherscan.io/nodetracker)
 
-Full, Light, Archive Nodes types and benefits of running a node
+**Nodes types:**
+
+Full, Light, Archive and benefits of running a node
 on [Ethereum (docs)](https://ethereum.org/en/developers/docs/nodes-and-clients/)
 
 ### Gas Fee [Base + Priority]
@@ -317,24 +341,36 @@ Fee paid per transaction to `B` bank to manage the system state (transaction led
 
 [Ethereum Gas fee for each op-code](https://ethereum.org/en/developers/docs/evm/opcodes/)
 
-**Note:** Storage is the most expensive in terms of Gas Fee, so we always need to declare minimum number of variables
-and need to significantly optimize code while building our decentralized applications.
-A single avoidable variable declaration with millions of transactions involving it can cost a lot of gas.
-Optimization is the main focus while building applications on Ethereum and is a tradeoff with prettier code.
-Note: This doesn't mean writing code that can't scale, comments should be used to explain the code wherever required.
+> **Note:** Storage is the most expensive in terms of Gas Fee, so we always need to declare minimum number of variables
+> and need to significantly optimize code while building our decentralized applications.
+> A single avoidable variable declaration with millions of transactions involving it can cost a lot of gas.
+> Optimization is the main focus while building applications on Ethereum and is a tradeoff with prettier code.
+> Note: This doesn't mean writing code that can't scale, comments should be used to explain the code wherever required.
+
+Understanding gas is one of the most important topic while writing Smart Contracts as there are often surge in gas fee,
+you should read Ethereum docs on gas fee [here](https://ethereum.org/en/developers/docs/gas/)
 
 ### Mining / Creating
 
-As in practical world the number of users that the bank has to manage is high and transactions number can be in
-**millions**,
-and as each individual hardware system has its own limits, so to put all transactions in a single system won't be
-feasible
-(vertical scaling has its limits), so to keep the system scale to more transaction
-the bank `mines` (creates) a new hardware system to hold the new transactions
+As in practical world the number of users that the bank has to manage is high and transactions count can be in
+**millions**, and as each individual hardware system has its own limits, so to put all transactions in a single system
+won't be feasible (_vertical scaling has its limits_), so to keep the system scale to more transaction
+the bank (mines) creates a new hardware system to hold the new transactions
 
 (**OLAP:** Archive Nodes / **OLTP:** Full / Light Node (indirectly))
 
 > Mining is a process of creating and adding a block of transactions to the blockchain network of Ethereum.
+
+There are three ways of performing Ethereum Mining :
+
+1. Pool Mining
+2. Solo Mining
+3. Cloud Mining
+
+> Proof-of-work is no longer underlying Ethereum's consensus mechanism, meaning mining has been switched off. Instead,
+> Ethereum is secured by validators who stake ETH.
+
+[Simplilearn Mining Blog](https://www.simplilearn.com/tutorials/blockchain-tutorial/ethereum-mining)
 
 ### Can anyone become miner in public Blockchain?
 
@@ -480,25 +516,39 @@ individual currency token, this helps prevent the double spending problem.
 
 ### FT & NFT
 
-FT stands for Fungible token i.e. a $10 note has equivalent value to another $10 note, same way one bitcoin has same
-value as another bitcoin.
-NFT Stands for Non-Fungible Token, Every human is unique and does not have exact same value has another human, so is
-Non-Fungible.
+**FT - Fungible Token:**
 
-When talking about blockchain (Public or Private) and no single node is owner of the network so the data is distributed
+> **Fungible:** (of a product or commodity) replaceable by another identical item.
+
+E.g. $10 note has equivalent value to another $10 note, same way one bitcoin has same
+value as another bitcoin.
+
+**NFT - Non-Fungible Token:**
+
+E.g. Every human is unique and does not have exact same value has another human, so is
+Non-Fungible. Popular use-case is NFT Artwork (E.g. Online Painting Ownership Sale / Purchase)
+
+When talking about blockchain, no single node is owner of the network so the data is distributed
 and is publicly available (or within nodes in Private blockchains), Also the smart contracts code (least bytecode) is
-publicly visible (Public Blockchain: Ethereum) so the security is a major concern and to tackle there, certain standards
+publicly visible so the security is a major concern and to tackle this certain standards
 are made as follows:
-IERC20: For implementation of FT
-IERC721: For implementation of NFT
-IERC1155: For implementation of a hybrid token (Can be FT & NFT)
-and many more [here](https://ethereum.org/en/developers/docs/standards/tokens/)
-ERC20 | ERC721 | ERC1155 are implementations of the above-mentioned standards.
+
+**IERC20:** For implementation of FT
+
+**IERC721:** For implementation of NFT
+
+**IERC1155:** For implementation of a hybrid token (Can be FT & NFT)
+
+and many more here on [Ethereum docs](https://ethereum.org/en/developers/docs/standards/tokens/)
+
+`ERC20 | ERC721 | ERC1155` are implementations of the above-mentioned standards.
 
 ### Token
 
 A token represents what the beholder owns, it can be a car, a piece of land, an individual currency note, a tree and
 anything.
+
+> **Note:** Token & Native Blockchain Coin are not the same thing.
 
 ### What problems blockchain solves?
 
@@ -563,6 +613,39 @@ much easier than on coinbase or other wallets. Coinbase is more focused to mainn
 
 ### How ERC1155 works?
 
+ERC1155 can act as ERC20 & ERC721.
+
+**As ERC20:**
+
+Each token in itself is fungible and non-fungible to other token
+
+```
+{
+  "token 1": [1, 2, 3, 4, 5, ..., n],
+  "token 2": [1, 2, 3, 4, 5, ..., n],
+  "token 3": [1, 2, 3, 4, 5, ..., n],
+  ...
+  "token n": [1, 2, 3, 4, 5, ..., n]
+}
+```
+
+**As ERC721:**
+
+Each token is unique (_only one token of its kind exists i.e. max supply is 1 for each token_) so it non-fungible to
+another token
+
+```
+{
+  "token 1": [1],
+  "token 2": [1],
+  "token 3": [1],
+  ...
+  "token n": [1]
+}
+```
+
+[BlockGeeks Youtube on ERC1155](https://www.youtube.com/watch?v=KZbKJGJshtM)
+
 ### DAO
 
 DAO Stands for decentralized Organisation, a self operating autonomous organisation
@@ -573,9 +656,8 @@ DAPP stands for decentralized application, e.g. you decide to build a decentrali
 
 ### Smart Contract
 
-A Contract is an agreement that specifies certain legally enforceable rights and obligations pertaining to two or more
-mutually agreeing parties
-A Contract can define how / when something has to be done
+> A Contract is an agreement that specifies certain legally enforceable rights and obligations pertaining to two or more
+> mutually agreeing parties. A Contract can define how / when something has to be done
 
 A Smart Contract is a Contract in coded form that has defined set of rules and is expected to behave as it is written
 and can not be altered once deployed on Ethereum chain. (Upgradable Smart contracts later explained)
@@ -606,19 +688,41 @@ Deploying code on bitcoin is almost impossible.
 
 ### EVM
 
+The Ethereum Virtual Machine or EVM is a piece of software that executes smart contracts and computes the state of the
+Ethereum network after each new block is added to the chain.
+
+The EVM sits on top of Ethereum's hardware and node network layer. Its main purpose is to compute the network's state
+and to run and compile various types of smart contract code into a readable format called 'Bytecode.'
+
+> The Ethereum Virtual Machine is the global virtual computer whose state every participant on the Ethereum network
+> stores and agrees on. Any participant can request the execution of arbitrary code on the EVM; code execution changes the
+> state of the EVM.
+
 [Ethereum EVM docs](https://ethereum.org/en/developers/docs/evm/)
 
-### Coding a Smart Contract
+### Writing Smart Contract
 
-Since the processing incurs gas, the system pre-know what needs to be executed to calculate the gas and the system is
-storage sensitive & needs to be rigid with no unexpected behaviour, the low level languages like:
-Cadence, Solidity, C++, Rust are used.
+Since the processing incurs gas, the system needs to pre-know what needs to be executed so as to calculate the amount of
+resources required to process the transaction. The transaction can not have unexpected behaviour
 
-For EVM, **Solidity** is used.
+Your wallet will warn you of transaction failure even before transaction execution
+Low level languages like: Cadence, Solidity, C++, Rust are used for writing Smart Contracts in variour blockchains
+
+For EVM (Ethereum), **Solidity** & **Vyper** is used.
+
+[Ethereum Smart Contract Languages](https://ethereum.org/en/developers/docs/smart-contracts/languages/)
 
 ### Files Storage [IPFS: Pinata / web3.storage]
 
-[IPFS Docs](https://docs.ipfs.tech/)
+Blockchains are storage sensitive (_Data needs to be stored in all full nodes_), so the storage costs a lot and should
+be
+avoided to store media on Smart Contract (_Storage is one of most expensive OpCode operations in Ethereum_)
+
+We use CID provided by these services to retrieve media.
+
+[IPFS Docs](https://docs.ipfs.tech/) | [IPFS FreeCodeCamp](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/)
+
+IPFS is a distributed system for storing and accessing files, websites, applications, and data.
 
 [Pinata Docs](https://docs.pinata.cloud/)
 
@@ -626,6 +730,8 @@ For EVM, **Solidity** is used.
 
 **Note:** Many projects even stores files on centralized web2 platform.
 Changing base url help reveal NFT Artwork later and multiple use cases.
+
+**web3.storage:** is easy to use and has APIs to fetch data from web2 applications and gives a lot of free space
 
 ### OpenSea
 
@@ -655,6 +761,10 @@ It doesn't make any state change to variables, i.e. is read only operation and d
 (change state) (Transaction need to be run on each node). Ethereum handles read and create/update transactions seprately
 
 ### Who executes code?
+
+Once the code is written, it is uploaded and deployed on the Ethereum Virtual Machine (EVM).
+EVM is a runtime compiler to execute a smart contract. Once the code is deployed on the EVM, every participant on the
+network has a copy of the contract.
 
 Miner Nodes
 
@@ -733,6 +843,8 @@ Why do you get so less faucet? As it mimics the mainnet and does equal computati
 [Merkle Tree](https://www.youtube.com/watch?v=n6nEPaE7KZ8&list=LL&index=857)
 
 [Debugging in Remix](https://www.youtube.com/watch?v=7z52hP26MFs&list=LL&index=818)
+
+[Optimizind Smart Contract](https://www.useweb3.xyz/guides/clean-contracts)
 
 [CoinMarketCap: Ethereum](https://coinmarketcap.com/currencies/ethereum/)
 
